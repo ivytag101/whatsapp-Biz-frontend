@@ -1,0 +1,204 @@
+@import         url('https://fonts.googleapis.com/css?family=Rajdhani');
+body{
+        margin:0;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background: #031717;
+  
+}
+  
+.header{
+        width:100%;
+        background-color: #25333D;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+}
+#logo {
+        margin-left:10px;
+        font-size:20px;
+        color:white;
+}
+
+.tagline {
+        display: flex;
+        color: blue;
+        font-size: 16px;
+        animation: blinking 2s infinite;
+        align-items: center;
+        justify-content: center;
+        background: #25333D;
+        border: 1px solid gray;
+}
+  @keyframes blinking {
+        0%    { color: green;}
+        25%    { color: white;}
+        50%    { color: #ef0a1a;}
+        75%    { color: deeppink;}
+        100%  { color: beige;}
+    }
+    
+.menu{
+        font-size:20px;
+        color:white;
+        width:30%;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+      
+}
+.option{
+        width:100%;
+        background: #25333D;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        position:sticky;
+        top:0;
+}
+.option > a{
+        font-size:15px;
+        color: darkgray;
+        text-decoration:none;
+        padding:12px;
+        width:28%;
+        text-align: center;
+}
+#chats{
+        border-bottom: 2px solid mediumseagreen;
+        box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+        display:flex;
+}
+.option > a:hover{
+        border-bottom: 1px solid darkgray;
+        box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+}
+.option > a.active{
+        border-bottom: 2px solid mediumseagreen;
+        color: mediumseagreen;
+        box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+}
+.up {
+  position: relative;
+}
+.up::after {
+  content:'';
+  position: absolute;
+  background-color: darkgray;
+  width: 6px;
+  height: 6px;
+  right: 12px;
+  top: 40%;
+  border-radius: 50%;
+}
+#catalog{
+        width:16%;
+}
+article {
+        height:70px;
+        background-color: #031717;
+        display: flex;
+        align-items: center;
+}
+article > img{
+        height: 45px;
+        border-radius:50%;
+        margin-left:20px;
+}
+.title{
+        margin-left:18px;
+        color: white;
+        font-size:17px; 
+        width:78%;
+        display:block;
+}
+.name{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        height:20px;
+}
+
+.name p {
+        color: darkgray; 
+        font-size: 10px;
+        padding-right: 12px;
+}
+.message{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        height:20px;
+}
+.message > h4{
+        color: black;
+        background: mediumseagreen;
+        font-size:10px;
+        width:20px;
+        height:20px;
+        text-align:center;
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        border-radius: 50%;
+        padding:1px;
+        margin-right: 10px;
+}
+
+p{
+        font-size:13px;
+        display:flex;
+        color: darkgray;
+        align-items:center;
+        justify-content:space-between;
+}
+#typing{
+        color: mediumseagreen;
+}
+p > img{
+        height:16px;
+        opacity:50%;
+        overflow: hidden;
+}
+#received{
+        color: black;
+        background: mediumseagreen;
+        font-size:10px;
+        width:18px;
+        height:18px;
+        text-align:center;
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        border-radius: 50%;
+        margin-left:8px;
+}
+#green{
+        outline:3px solid limegreen;
+        
+}
+article:hover{
+        background: #686F6B;
+}
+
+.chat_list::last-child, article::last-child {
+       margin-bottom: 20%;
+}
+#tick {
+        width: 15px;
+        height: 15px;
+}
+
+.newmessage {
+    display: flex;
+    position: fixed;
+    padding: 18px 18px;
+    background-color: mediumseagreen;
+    color: black;
+    border-radius: 13px;
+    bottom: 20px;
+    right: 8px;
+    font-size: 20px;
+    transform: rotateZ(180deg);
+}
